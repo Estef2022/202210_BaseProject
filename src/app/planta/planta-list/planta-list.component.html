@@ -1,0 +1,41 @@
+<tbody>
+<div class="container-fluid">
+  <div class="row">
+  <div class="col">
+    <br/>
+    <table class="table" width=»100%» cellspacing=»3″ cellpadding=»5″>
+      <thead>
+        <tr>
+          <th class="h4 table-dark" style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">#</th>
+          <th class="h4 table-dark" style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">Nombre común</th>
+          <th class="h4 table-dark" style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">Tipo</th>
+          <th class="h4 table-dark"style="font-family: Arial, Helvetica, sans-serif; font-size: medium;">Clima</th>
+        </tr>
+      </thead>
+      <tr *ngFor="let planta of plantas">
+        <td [width]="100">
+          <dd>{{planta.id}}</dd>
+        </td>
+        <td [width]="200">
+          <dd>{{planta.nombre_comun}}</dd>
+        </td>
+        <td [width]="120">
+          <dd>{{planta.tipo}}</dd>
+        </td>
+        <td [width]="300">
+          <dd>{{planta.clima}}</dd>
+        </td>
+      </tr>
+      <tbody>
+      </tbody>
+    </table>
+    <br>
+    <h6>
+      Total plantas de interior: {{interior}}
+      <br>
+      Total plantas exterior: {{exterior}}
+    </h6>
+  </div>
+</div>
+</div>
+</tbody>
