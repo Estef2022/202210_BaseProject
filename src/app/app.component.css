@@ -1,3 +1,18 @@
 * [lang^=en] {
   color: green;
 }
+
+img {
+  display: block;
+  margin: 0 left;
+  max-width: 200%;
+  width: 100%;
+  border: 15px solid white;
+
+}
+
+
+
+
+
+
